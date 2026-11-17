@@ -1,0 +1,7 @@
+# Личные файлы и выгрузки, не относящиеся к сайту
+uploads/
+*.zip
+# Системное
+.DS_Store
+.sudo_as_admin_successful
+node_modules/

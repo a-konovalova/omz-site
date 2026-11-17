@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Карьера — АО «ОМЗ» | Работа на Омутнинском металлургическом заводе</title><meta name="description" content="Открытые вакансии Омутнинского металлургического завода: производство, технология, ремонт, ОТК, офис. Обучение и наставничество, социальный пакет, градообразующее предприятие с 1773 года."><style>
+  :root{
+    --red:#A31616; --red-dark:#7E1111; --black:#111111; --grey:#6F7478; --grey-light:#E6E8E8;
+    --bg:#F2F3F3; --white:#FFFFFF; --line:rgba(17,17,17,.12);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--black);line-height:1.5;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase}
+  .container{max-width:1320px;margin:0 auto;padding:0 28px}
+  /* HEADER */
+  .topbar{background:var(--black);color:#fff;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+  .topbar .container{display:flex;justify-content:space-between;padding-top:8px;padding-bottom:8px;gap:16px;flex-wrap:wrap}
+  .topbar span{opacity:.75}.topbar b{color:#fff;font-weight:600}.dot{width:7px;height:7px;background:var(--red);display:inline-block;border-radius:50%;margin-right:7px;vertical-align:middle}
+  header.main{position:sticky;top:0;z-index:50;background:rgba(242,243,243,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+  .logo{display:flex;align-items:center;gap:14px;flex-shrink:0}
+  .logo-mark{width:48px;height:48px;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:900;letter-spacing:-.04em;line-height:.85;text-align:center;font-size:15px;position:relative;overflow:hidden}
+  .logo-mark:after{content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;background:var(--black)}
+  .logo-text{line-height:1}.logo-text strong{display:block;font-size:18px;letter-spacing:-.02em;line-height:1}.logo-text small{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--grey);font-weight:700}
+  .menu{display:flex;gap:28px;font-size:13px;font-weight:600;letter-spacing:.02em}
+  .menu a{padding:8px 0;position:relative}.menu a:after{content:"";position:absolute;left:0;bottom:2px;height:2px;width:0;background:var(--red);transition:.25s}.menu a:hover:after{width:100%}
+  .menu a.current{color:var(--red)}.menu a.current:after{width:100%}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;padding:13px 20px;font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--red);transition:.2s;cursor:pointer}
+  .btn:hover{background:var(--black);border-color:var(--black)}
+  .btn-outline{background:transparent;color:var(--black);border:1px solid var(--black)}.btn-outline:hover{background:var(--black);color:#fff}
+  .btn-white{background:#fff;color:var(--black);border-color:#fff}.btn-white:hover{background:var(--red);color:#fff;border-color:var(--red)}
+  .burger{display:none;background:none;border:1px solid var(--line);width:44px;height:44px;font-size:20px;cursor:pointer}
+  @media(max-width:1120px){.menu{display:none}.burger{display:block}.menu.open{display:flex;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;padding:18px 28px;border-bottom:1px solid var(--line);gap:4px}.menu.open a{padding:12px 0;border-bottom:1px solid var(--line)}}
+  /* PAGE HERO */
+  .page-hero{background:#111;color:#fff;position:relative;overflow:hidden;min-height:380px;display:flex;align-items:center}
+  .page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#111 0%,#111 35%,rgba(17,17,17,.88) 58%,rgba(17,17,17,.05) 100%);pointer-events:none}
+  .page-hero .container{position:relative;z-index:2;width:100%;padding-top:55px;padding-bottom:55px}
+  .page-hero svg.hero-art{position:absolute;width:min(58vw,700px);height:auto;right:-2%;top:50%;transform:translateY(-50%);opacity:.95}
+  .breadcrumbs{font-size:12px;color:#B9BDBE;letter-spacing:.06em}.breadcrumbs a:hover{color:#fff}.breadcrumbs span{color:#A31616;padding:0 11px}
+  .page-hero h1{margin:18px 0 12px;font-size:clamp(52px,6vw,82px);line-height:.95;letter-spacing:-.04em;text-transform:uppercase;font-weight:900}
+  .page-hero h1 em{font-style:normal;color:#A31616}
+  .page-hero p{color:#B9BDBE;font-size:16px;max-width:520px;line-height:1.65}
+  .hero-index{font-size:11px;color:#B9BDBE;letter-spacing:.16em;text-transform:uppercase;margin-top:26px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+  .hero-index:before{content:"";width:32px;height:2px;background:var(--red)}
+  .hero-index b{color:#fff;font-weight:700}
+  /* sections */
+  section{padding:84px 0}
+  .sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px;flex-wrap:wrap}
+  .kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:800;display:flex;align-items:center;gap:10px}
+  .kicker:before{content:"";width:28px;height:2px;background:var(--red);display:block}
+  h2{font-size:clamp(30px,4vw,50px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase;font-weight:900;margin-top:12px}
+  h2 span{color:var(--red)}
+  .sec-desc{max-width:520px;color:var(--grey);font-size:16px;line-height:1.7}
+  /* why block */
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .why-card{background:#fff;border:1px solid var(--line);padding:24px;min-height:230px;display:flex;flex-direction:column;border-top:4px solid var(--red)}
+  .why-card .num{font-size:11px;letter-spacing:.16em;color:var(--grey);font-weight:800}
+  .why-card h3{font-size:19px;line-height:1.15;letter-spacing:-.02em;margin:16px 0 10px}
+  .why-card p{color:var(--grey);font-size:14px;line-height:1.65}
+  /* vacancies */
+  .vac-tools{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:18px}
+  .vac-chips{display:flex;gap:8px;flex-wrap:wrap}
+  .chip{border:1px solid var(--black);background:transparent;padding:9px 14px;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+  .chip.active{background:var(--black);color:#fff}
+  .vac-count{font-size:13px;color:var(--grey)}.vac-count b{color:var(--black)}
+  .vac-list{display:flex;flex-direction:column;gap:10px}
+  .vac-row{background:#fff;border:1px solid var(--line);padding:18px 20px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;transition:.2s}
+  .vac-row:hover{border-color:var(--black);box-shadow:0 12px 28px rgba(17,17,17,.07);transform:translateY(-2px)}
+  .vac-row[hidden]{display:none}
+  .vac-dept{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);font-weight:800}
+  .vac-row h3{font-size:18px;line-height:1.25;letter-spacing:-.01em;margin-top:5px}
+  .vac-meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:12px;color:var(--grey)}
+  .vac-meta span{display:inline-flex;align-items:center;gap:6px}
+  .vac-meta i{width:6px;height:6px;background:var(--red);display:inline-block;border-radius:50%}
+  .vac-apply{background:transparent;border:1px solid var(--black);padding:12px 20px;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:.2s;white-space:nowrap}
+  .vac-apply:hover{background:var(--black);color:#fff}
+  .empty{display:none;background:#fff;border:1px dashed var(--line);padding:40px;text-align:center;color:var(--grey)}
+  /* process dark */
+  .dark{background:var(--black);color:#fff}.dark .sec-desc{color:#AEB3B5}.dark h2{color:#fff}
+  .process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:10px}
+  .step{border:1px solid rgba(255,255,255,.16);padding:22px;background:#161616;min-height:215px}
+  .step b{font-size:12px;letter-spacing:.16em;color:#FF6B6B}.step h3{font-size:18px;margin:32px 0 10px;line-height:1.15}.step p{color:#AEB3B5;font-size:14px;line-height:1.65}
+  /* reserve CTA */
+  .reserve{background:#fff;border:1px solid var(--line);border-left:6px solid var(--red);padding:28px 30px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .reserve h3{font-size:22px;letter-spacing:-.02em}
+  .reserve p{color:var(--grey);margin-top:6px;max-width:560px;line-height:1.6}
+  /* footer */
+  footer{background:#111;color:#fff;padding:64px 0 0}
+  .footer-grid{display:grid;grid-template-columns:1.15fr .8fr 1fr 1.15fr;gap:34px}
+  .footer-grid h5{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8B9093;margin-bottom:14px}
+  .footer-grid ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:14px}
+  .footer-grid a:hover{color:#fff}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding:18px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:#8B9093}
+  .form{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+  .form input,.form textarea{background:#1B1B1B;border:1px solid rgba(255,255,255,.16);color:#fff;padding:11px 12px;font:inherit;font-size:14px}
+  .form input::placeholder,.form textarea::placeholder{color:#8B9093}
+  /* modal */
+  .modal{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+  .modal.open{display:flex}
+  .modal-backdrop{position:absolute;inset:0;background:rgba(8,8,8,.72);backdrop-filter:blur(4px)}
+  .modal-dialog{position:relative;background:#fff;max-width:520px;width:100%;max-height:92vh;overflow:auto;border-top:6px solid var(--red);padding:30px;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+  .modal-close{position:absolute;top:14px;right:14px;background:none;border:1px solid var(--line);width:38px;height:38px;font-size:18px;cursor:pointer}
+  .modal-close:hover{background:var(--black);color:#fff}
+  .modal-dialog h3{font-size:24px;letter-spacing:-.02em;line-height:1.15;padding-right:40px}
+  .modal-vac{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:800;margin:12px 0 18px;display:flex;align-items:center;gap:10px}
+  .modal-vac:before{content:"";width:22px;height:2px;background:var(--red)}
+  .modal-form{display:flex;flex-direction:column;gap:10px}
+  .modal-form label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);font-weight:700}
+  .modal-form input,.modal-form select,.modal-form textarea{border:1px solid var(--line);padding:12px;font:inherit;font-size:14px;background:var(--bg)}
+  .modal-form input:focus,.modal-form select:focus,.modal-form textarea:focus{outline:2px solid var(--red);outline-offset:1px;background:#fff}
+  .modal-form .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--grey);line-height:1.5;font-weight:400;letter-spacing:0;text-transform:none}
+  .consent input{margin-top:2px}
+  .form-success{display:none;text-align:center;padding:30px 10px 10px}
+  .form-success b{display:block;font-size:22px;letter-spacing:-.02em;margin-bottom:10px}
+  .form-success p{color:var(--grey);line-height:1.6}
+  .form-success .tick{width:64px;height:64px;border-radius:50%;background:#e9f6ec;color:#1f7a38;display:grid;place-items:center;font-size:30px;margin:0 auto 16px}
+  @media(max-width:1080px){.why-grid{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:980px){.vac-row{grid-template-columns:1fr;gap:12px}.page-hero svg.hero-art{width:100%;right:-38%;opacity:.6}}
+  @media(max-width:560px){section{padding:60px 0}.why-grid,.process,.footer-grid{grid-template-columns:1fr}.container{padding:0 18px}.page-hero{min-height:320px}.page-hero svg.hero-art{width:170%;right:-95%}.modal-dialog{padding:22px}.modal-form .row{grid-template-columns:1fr}}
+</style></head>
+<body>
+<div class="topbar"><div class="container"><span><i class="dot"></i>Кировская обл., г. Омутнинск • Основан в <b>1773 году</b></span><span>EN &nbsp;|&nbsp; <b>RU</b> &nbsp;&nbsp;•&nbsp;&nbsp; +7 (83352) 4-14-01</span></div></div>
+<header class="main">
+  <div class="container nav">
+    <a class="logo" href="home.html#top" aria-label="ОМЗ">
+      <span class="logo-mark">ОМЗ</span>
+      <span class="logo-text"><strong>ОМЗ</strong><small>Омутнинский<br>металлургический завод</small></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="about.html">О компании</a><a href="products.html">Продукция</a><a href="home.html#tech">Технологии</a><a href="sustain.html">Устойчивое развитие</a><a href="home.html#news">Медиацентр</a><a href="career.html" class="current" aria-current="page">Карьера</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn" href="contacts.html">Контакты <span>→</span></a>
+      <button class="burger" id="burger" aria-label="Меню">☰</button>
+    </div>
+  </div>
+</header>
+<main>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <svg class="hero-art" viewBox="0 0 640 400" fill="none" aria-hidden="true">
+    <!-- каска -->
+    <g stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M250 210a110 110 0 0 1 220 0" fill="#161616"/>
+      <path d="M222 210h276" stroke="#A31616"/>
+      <path d="M312 96v-28h56v28" fill="#161616"/>
+    </g>
+    <!-- искры -->
+    <g fill="#A31616"><circle cx="512" cy="80" r="5"/><circle cx="552" cy="140" r="3.4"/><circle cx="500" cy="148" r="2.6"/><circle cx="586" cy="70" r="2.6"/><circle cx="540" cy="44" r="4"/></g>
+    <path d="M470 120l22-22M486 152l30-14M516 84l16-18" stroke="#A31616" stroke-width="3" stroke-linecap="round"/>
+  </svg>
+  <div class="container">
+    <div class="breadcrumbs"><a href="home.html">Главная</a><span> / </span>Карьера</div>
+    <h1>Карьера<em>.</em></h1>
+    <p>Металл — это не только технология, но и люди. Команда, которая держит плавку с 1773 года, растёт и ищет своих.</p>
+    <div class="hero-index"><span>Открыто <b>12 вакансий</b></span><span>·</span><span>Омутнинск, Кировская область</span></div>
+  </div>
+</div>
+
+<!-- WHY -->
+<section id="why">
+  <div class="container">
+    <div class="sec-head">
+      <div><div class="kicker">Почему ОМЗ</div><h2>Стабильность,<br><span>которую не</span> покупают</h2></div>
+      <p class="sec-desc">Мы не стартап и не «место на год». Работа на градообразующем предприятии с 250-летней историей — это про характер, школу и длинную дистанцию.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><span class="num">01 / ШКОЛА</span><h3>Обучение и наставничество</h3><p>Программа ученичества на производстве: опытный наставник, дублирование на двух сменах и допуск к самостоятельной работе.</p></div>
+      <div class="why-card"><span class="num">02 / СТАБИЛЬНОСТЬ</span><h3>Завод, который не закрылся за 250 лет</h3><p>Градообразующее предприятие полного цикла. Оплачиваемые отпуска, белая зарплата без задержек и понятный график сменности.</p></div>
+      <div class="why-card"><span class="num">03 / СОЦПАКЕТ</span><h3>Пакет, который чувствуется</h3><p>ДМС, компенсация питания, материальная поддержка, профорганизация, оплата проезда и содействие с жильём для иногородних.</p></div>
+      <div class="why-card"><span class="num">04 / РОСТ</span><h3>Рост внутри завода</h3><p>Траектория «ученик → вальцовщик → мастер смены → начальник участка». Повышение по итогам аттестации, а не по знакомству.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VACANCIES -->
+<section id="vacancies" style="padding-top:24px">
+  <div class="container">
+    <div class="sec-head" style="margin-bottom:20px">
+      <div><div class="kicker">Открытые вакансии</div><h2>Выбери<br><span>своё место</span></h2></div>
+      <p class="sec-desc">Нажми «Откликнуться» напротив подходящей вакансии — откроется форма с уже выбранной позицией. Ответим в течение двух рабочих дней.</p>
+    </div>
+    <div class="vac-tools">
+      <div class="vac-chips" role="group" aria-label="Фильтр по направлению">
+        <button class="chip active" data-vfilter="all">Все · 12</button>
+        <button class="chip" data-vfilter="prod">Производство · 5</button>
+        <button class="chip" data-vfilter="tech">Технология · 3</button>
+        <button class="chip" data-vfilter="repair">Ремонт · 2</button>
+        <button class="chip" data-vfilter="otk">ОТК · 1</button>
+        <button class="chip" data-vfilter="office">Офис · 1</button>
+      </div>
+      <div class="vac-count">Показано: <b id="vacShown">12</b></div>
+    </div>
+
+    <div class="vac-list" id="vacList"></div>
+    <div class="empty" id="vacEmpty">В этом направлении пока пусто. Загляни в <a href="#reserve" style="text-decoration:underline">кадровый резерв</a> — напишем, когда появится вакансия.</div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="dark" id="how">
+  <div class="container">
+    <div class="sec-head">
+      <div><div class="kicker" style="color:#FF6B6B">Как это устроено</div><h2>Путь<br>от отклика<br>к <span style="color:#FF5A5A">офферу</span></h2></div>
+      <p class="sec-desc">Четыре шага без бюрократии. Между первым письмом и выходом на смену — обычно 2–3 недели.</p>
+    </div>
+    <div class="process">
+      <div class="step"><b>ШАГ — 01</b><h3>Отклик</h3><p>Оставь заявку через форму на этой странице или позвони в кадровую службу. Резюме не обязательно — достаточно имени и контакта.</p></div>
+      <div class="step"><b>ШАГ — 02</b><h3>Звонок</h3><p>Кадровик перезванивает в течение двух рабочих дней: коротко о вакансии, условиях и твоём опыте.</p></div>
+      <div class="step"><b>ШАГ — 03</b><h3>Собеседование и экскурсия</h3><p>Разговор с мастером или начальником участка плюс экскурсия по производству — чтобы ты увидел рабочее место изнутри.</p></div>
+      <div class="step"><b>ШАГ — 04</b><h3>Оффер и наставник</h3><p>Оферта с условиями, оформление — и первые 30 дней с закреплённым наставником. Допуск к самостоятельной работе после аттестации.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVE -->
+<section id="reserve" style="padding-top:12px">
+  <div class="container">
+    <div class="reserve">
+      <div>
+        <div class="kicker">Кадровый резерв</div>
+        <h3 style="margin-top:10px">Не нашли подходящую вакансию?</h3>
+        <p>Отправь резюме в кадровый резерв: когда откроется позиция по твоему профилю, мы напишем первыми. Ждём рабочих, инженеров, технологов и молодых специалистов.</p>
+      </div>
+      <button class="btn" type="button" data-apply="Кадровый резерв (не нашёл вакансию)">Отправить резюме →</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contacts">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="home.html#top" style="color:#fff"><span class="logo-mark">ОМЗ</span><span class="logo-text"><strong style="color:#fff">ОМЗ</strong><small style="color:#9AA0A3">Омутнинский металлургический завод</small></span></a>
+        <p style="color:#AEB3B5;line-height:1.7;margin-top:18px;max-width:320px;font-size:14px">Фасонный и сортовой горячекатаный прокат с 1773 года. Надёжность, проверенная временем и отраслями.</p>
+        <div style="display:flex;gap:8px;margin-top:18px"><span style="width:28px;height:28px;background:var(--red);display:block" title="#A31616"></span><span style="width:28px;height:28px;background:#2A2A2A;border:1px solid rgba(255,255,255,.2);display:block" title="#111111"></span><span style="width:28px;height:28px;background:var(--grey);display:block" title="#6F7478"></span><span style="width:28px;height:28px;background:var(--bg);display:block" title="#F2F3F3"></span></div>
+      </div>
+      <div><h5>Навигация</h5><ul><li><a href="about.html">О компании</a></li><li><a href="products.html">Продукция</a></li><li><a href="sustain.html">Устойчивое развитие</a></li><li><a href="career.html">Карьера</a></li><li><a href="home.html#news">Медиацентр</a></li></ul></div>
+      <div><h5>Кадровая служба</h5><ul><li><a href="#vacancies">Все вакансии</a></li><li><a href="#how">Как устроиться</a></li><li><a href="#reserve">Кадровый резерв</a></li><li>Пн–Пт, 08:00 — 16:30</li></ul></div>
+      <div>
+        <h5>Свяжитесь с нами</h5>
+        <ul><li>612740, Кировская обл.,<br>г. Омутнинск, …</li><li>+7 (83352) 4-14-01</li><li>info@omz.example • <a href="mailto:hr@omz.example" style="text-decoration:underline">hr@omz.example</a></li></ul>
+        <form class="form" id="leadForm"><input required type="text" placeholder="Ваше имя" aria-label="Ваше имя"><input required type="tel" placeholder="Телефон или e-mail" aria-label="Контакт"><textarea rows="2" placeholder="Вопрос кадровой службе…"></textarea><button class="btn" type="submit" style="justify-content:center">Задать вопрос →</button><span id="formMsg" style="font-size:13px;color:#8CE99A;display:none">Спасибо! Кадровая служба ответит в ближайший рабочий день.</span></form>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 1773—2026 АО «Омутнинский металлургический завод». Концепт редизайна в фирменных цветах бренда.</span><span>HEX #A31616 • #111111 • #6F7478 • #F2F3F3</span></div>
+  </div>
+</footer>
+
+<!-- APPLY MODAL -->
+<div class="modal" id="applyModal" role="dialog" aria-modal="true" aria-labelledby="applyTitle" hidden>
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-dialog" role="document">
+    <button class="modal-close" type="button" data-close-modal aria-label="Закрыть">✕</button>
+    <h3 id="applyTitle">Отклик на вакансию</h3>
+    <div class="modal-vac" id="modalVacancy">Вакансия</div>
+    <form class="modal-form" id="applyForm" novalidate="false">
+      <div class="row">
+        <div><label for="fName">Имя *</label><input id="fName" name="name" required autocomplete="name" placeholder="Иван Петрович"></div>
+        <div><label for="fPhone">Телефон или e-mail *</label><input id="fPhone" name="contact" required autocomplete="tel" placeholder="+7 (___) ___-__-__"></div>
+      </div>
+      <div><label for="fVacancy">Вакансия</label><select id="fVacancy" name="vacancy"></select></div>
+      <div><label for="fCity">Город / откуда вы</label><input id="fCity" name="city" placeholder="Омутнинск / готов к переезду"></div>
+      <div><label for="fAbout">Пара слов о себе</label><textarea id="fAbout" name="about" rows="3" placeholder="Опыт, навыки, когда готовы выйти…"></textarea></div>
+      <label class="consent"><input type="checkbox" required> Я соглашаюсь на обработку персональных данных в соответствии с политикой конфиденциальности АО «ОМЗ» *</label>
+      <button class="btn" type="submit" style="justify-content:center;width:100%">Отправить отклик →</button>
+    </form>
+    <div class="form-success" id="applySuccess">
+      <div class="tick">✓</div>
+      <b>Отклик отправлен</b>
+      <p>Кадровая служба ОМЗ свяжется в течение двух рабочих дней.<br>Номер обращения: <b class="mono" id="applyNumber">OMZ-000</b></p>
+      <button class="btn btn-outline" type="button" data-close-modal style="margin-top:20px">Закрыть</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Mobile menu
+const burger=document.getElementById('burger'), menu=document.getElementById('menu');
+burger.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+
+// Vacancies data
+const VACANCIES=[
+  {t:'Вальцовщик стана горячей прокатки',dept:'prod',deptLabel:'Производство',exp:'Опыт от 1 года',sched:'Сменный график',tag:'Вахтой не требуется'},
+  {t:'Мастер смены прокатного стана',dept:'prod',deptLabel:'Производство',exp:'Опыт от 3 лет',sched:'Сменный график',tag:'Руководящая'},
+  {t:'Машинист крана',dept:'prod',deptLabel:'Производство',exp:'Опыт от 1 года',sched:'Сменный график',tag:''},
+  {t:'Электрогазосварщик',dept:'prod',deptLabel:'Производство',exp:'Опыт от 1 года',sched:'Сменный график',tag:'Разряд 4–5'},
+  {t:'Газорезчик',dept:'prod',deptLabel:'Производство',exp:'Опыт от 1 года',sched:'Сменный график',tag:''},
+  {t:'Инженер-технолог (прокатное производство)',dept:'tech',deptLabel:'Технология',exp:'Высшее образование',sched:'Полный день',tag:'Инженер'},
+  {t:'Инженер-механик по оборудованию',dept:'tech',deptLabel:'Технология',exp:'Опыт от 2 лет',sched:'Полный день',tag:'Инженер'},
+  {t:'Инженер-конструктор (оснастка и калибры)',dept:'tech',deptLabel:'Технология',exp:'Опыт от 1 года',sched:'Полный день',tag:'Инженер'},
+  {t:'Слесарь-ремонтник',dept:'repair',deptLabel:'Ремонтная служба',exp:'Опыт от 1 года',sched:'Сменный график',tag:''},
+  {t:'Слесарь-электрик по ремонту оборудования',dept:'repair',deptLabel:'Ремонтная служба',exp:'Опыт от 1 года',sched:'Сменный график',tag:''},
+  {t:'Контролёр качества продукции (ОТК)',dept:'otk',deptLabel:'ОТК и лаборатория',exp:'Можно без опыта — научим',sched:'Полный день',tag:'С образованием'},
+  {t:'Специалист кадровой службы',dept:'office',deptLabel:'Офис',exp:'Опыт от 1 года',sched:'Полный день',tag:''}
+];
+
+const list=document.getElementById('vacList');
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+list.innerHTML=VACANCIES.map(v=>`
+  <article class="vac-row" data-dept="${v.dept}">
+    <div>
+      <span class="vac-dept">${esc(v.deptLabel)}</span>
+      <h3>${esc(v.t)}</h3>
+      <div class="vac-meta"><span><i></i>${esc(v.exp)}</span><span><i></i>${esc(v.sched)}</span>${v.tag?`<span><i></i>${esc(v.tag)}</span>`:''}</div>
+    </div>
+    <button class="vac-apply" type="button" data-apply="${esc(v.t)}">Откликнуться</button>
+  </article>`).join('');
+
+// Filter
+const vchips=[...document.querySelectorAll('[data-vfilter]')];
+const rows=[...list.querySelectorAll('.vac-row')];
+const shownEl=document.getElementById('vacShown'), emptyEl=document.getElementById('vacEmpty');
+vchips.forEach(ch=>ch.addEventListener('click',()=>{
+  vchips.forEach(c=>c.classList.remove('active')); ch.classList.add('active');
+  const f=ch.dataset.vfilter; let shown=0;
+  rows.forEach(r=>{ const ok=f==='all'||r.dataset.dept===f; r.hidden=!ok; if(ok)shown++; });
+  shownEl.textContent=shown; emptyEl.style.display=shown?'none':'block';
+}));
+
+// Modal
+const modal=document.getElementById('applyModal');
+const dialog=modal.querySelector('.modal-dialog');
+const vacLabel=document.getElementById('modalVacancy');
+const select=document.getElementById('fVacancy');
+const successBox=document.getElementById('applySuccess');
+const form=document.getElementById('applyForm');
+select.innerHTML=['<option>Общий отклик / пока не определился(лась)</option>',...VACANCIES.map(v=>`<option>${esc(v.t)}</option>`),'<option>Кадровый резерв (не нашёл вакансию)</option>'].join('');
+let lastFocus=null;
+function openModal(vacancy){
+  lastFocus=document.activeElement;
+  if(vacancy){ select.value=vacancy; }
+  vacLabel.textContent=vacancy||'Отклик / Кадровый резерв';
+  form.style.display='flex'; successBox.style.display='none';
+  modal.hidden=false; requestAnimationFrame(()=>modal.classList.add('open'));
+  document.body.style.overflow='hidden';
+  setTimeout(()=>document.getElementById('fName').focus(),60);
+}
+function closeModal(){
+  modal.classList.remove('open'); document.body.style.overflow='';
+  setTimeout(()=>{ modal.hidden=true; if(lastFocus)lastFocus.focus(); },180);
+}
+document.addEventListener('click',e=>{
+  const opener=e.target.closest('[data-apply]');
+  if(opener){ e.preventDefault(); openModal(opener.dataset.apply); return; }
+  if(e.target.closest('[data-close-modal]')) closeModal();
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&!modal.hidden) closeModal();
+  // focus trap
+  if(e.key==='Tab'&&!modal.hidden){
+    const focusables=[...dialog.querySelectorAll('button,input,select,textarea,a[href]')].filter(el=>el.offsetParent!==null);
+    if(!focusables.length)return;
+    const first=focusables[0], last=focusables[focusables.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  }
+});
+select.addEventListener('change',()=>{ vacLabel.textContent=select.value; });
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  if(!form.reportValidity())return;
+  document.getElementById('applyNumber').textContent='OMZ-'+String(Math.floor(100000+Math.random()*900000));
+  form.style.display='none'; successBox.style.display='block';
+});
+// deep links: career.html#apply opens the form, career.html#vacancies scrolls to the list
+if(location.hash==='#apply') openModal('Общий отклик / пока не определился(лась)');
+
+// Footer lead form (mock)
+document.getElementById('leadForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('formMsg').style.display='block';e.target.querySelector('button').textContent='Вопрос отправлен ✓';});
+</script></body></html>

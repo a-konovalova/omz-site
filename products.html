@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Продукция и сферы применения — АО «ОМЗ»</title><meta name="description" content="Каталог металлопродукции Омутнинского металлургического завода и 13 сфер применения. Горячекатаный, калиброванный прокат, механически обработанные изделия, фасонные профили."><style>
+  :root{
+    --red:#A31616; --red-dark:#7E1111; --black:#111111; --grey:#6F7478; --grey-light:#E6E8E8;
+    --bg:#F2F3F3; --white:#FFFFFF; --line:rgba(17,17,17,.12);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--black);line-height:1.5;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase}
+  .container{max-width:1320px;margin:0 auto;padding:0 28px}
+  /* HEADER */
+  .topbar{background:var(--black);color:#fff;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+  .topbar .container{display:flex;justify-content:space-between;padding-top:8px;padding-bottom:8px;gap:16px;flex-wrap:wrap}
+  .topbar span{opacity:.75}.topbar b{color:#fff;font-weight:600}.dot{width:7px;height:7px;background:var(--red);display:inline-block;border-radius:50%;margin-right:7px;vertical-align:middle}
+  header.main{position:sticky;top:0;z-index:50;background:rgba(242,243,243,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+  .logo{display:flex;align-items:center;gap:14px;flex-shrink:0}
+  .logo-mark{width:48px;height:48px;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:900;letter-spacing:-.04em;line-height:.85;text-align:center;font-size:15px;position:relative;overflow:hidden}
+  .logo-mark:after{content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;background:var(--black)}
+  .logo-text{line-height:1}.logo-text strong{display:block;font-size:18px;letter-spacing:-.02em;line-height:1}.logo-text small{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--grey);font-weight:700}
+  .menu{display:flex;gap:28px;font-size:13px;font-weight:600;letter-spacing:.02em}
+  .menu a{padding:8px 0;position:relative}.menu a:after{content:"";position:absolute;left:0;bottom:2px;height:2px;width:0;background:var(--red);transition:.25s}.menu a:hover:after{width:100%}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;padding:13px 20px;font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--red);transition:.2s;cursor:pointer}
+  .btn:hover{background:var(--black);border-color:var(--black)}
+  .btn-outline{background:transparent;color:var(--black);border:1px solid var(--black)}.btn-outline:hover{background:var(--black);color:#fff}
+  .btn-white{background:#fff;color:var(--black);border-color:#fff}.btn-white:hover{background:var(--red);color:#fff;border-color:var(--red)}
+  .burger{display:none;background:none;border:1px solid var(--line);width:44px;height:44px;font-size:20px;cursor:pointer}
+  /* HERO */
+  .hero{background:var(--black);color:#fff;position:relative;overflow:hidden}
+  .hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:72px 72px;pointer-events:none}
+  .hero-inner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;padding:72px 0 0}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.22);padding:8px 12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+  .eyebrow i{width:8px;height:8px;background:var(--red);display:block}
+  h1{font-size:clamp(44px,6.2vw,84px);line-height:.92;letter-spacing:-.04em;text-transform:uppercase;font-weight:900;margin:22px 0 18px}
+  h1 em{font-style:normal;color:var(--red)} h1 .outline{color:transparent;-webkit-text-stroke:1.5px #fff}
+  .hero-lead{font-size:18px;line-height:1.6;color:#D8DBDB;max-width:560px}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 34px}
+  .hero-meta{display:flex;gap:0;border-top:1px solid rgba(255,255,255,.15);border-left:1px solid rgba(255,255,255,.15);max-width:640px}
+  .hero-meta div{flex:1;padding:16px;border-right:1px solid rgba(255,255,255,.15);border-bottom:1px solid rgba(255,255,255,.15)}
+  .hero-meta b{font-size:24px;display:block;line-height:1}.hero-meta span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9AA0A3}
+  .hero-visual{position:relative;min-height:520px}
+  .plant-card{background:#1B1B1B;border:1px solid rgba(255,255,255,.14);padding:18px;position:relative}
+  .plant-card:before{content:"ОМЗ / 1773 — 2026";position:absolute;top:-10px;left:16px;background:var(--red);color:#fff;font-size:10px;letter-spacing:.14em;padding:4px 8px;font-weight:800}
+  .spec-row{display:flex;justify-content:space-between;gap:12px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#9AA0A3;border-top:1px dashed rgba(255,255,255,.2);padding-top:12px;margin-top:14px;flex-wrap:wrap}
+  .spec-row b{color:#fff}
+  .hero-bottom{position:relative;border-top:1px solid rgba(255,255,255,.14);margin-top:44px}
+  .hero-bottom .container{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px;gap:16px;flex-wrap:wrap}
+  .slides{display:flex;gap:8px}.slide-dot{width:42px;height:4px;background:rgba(255,255,255,.25);border:0;cursor:pointer}.slide-dot.active{background:var(--red)}
+  .coord{font-size:11px;letter-spacing:.14em;color:#8B9093;text-transform:uppercase}
+  /* ticker */
+  .ticker{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:13px 0;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:13px}
+  .ticker-track{display:inline-block;animation:tick 45s linear infinite}
+  @keyframes tick{to{transform:translateX(-50%)}}
+  /* sections */
+  section{padding:88px 0}
+  .sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+  .kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:800;display:flex;align-items:center;gap:10px}
+  .kicker:before{content:"";width:28px;height:2px;background:var(--red);display:block}
+  h2{font-size:clamp(32px,4vw,52px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase;font-weight:900;margin-top:12px}
+  h2 span{color:var(--red)}
+  .sec-desc{max-width:520px;color:var(--grey);font-size:16px;line-height:1.7}
+  /* about */
+  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}
+  .about-main{background:var(--black);color:#fff;padding:34px;position:relative;overflow:hidden}
+  .about-main:after{content:"250";position:absolute;right:-10px;bottom:-42px;font-size:180px;font-weight:900;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.18)}
+  .about-main p{color:#D6D9D9;line-height:1.75;position:relative;z-index:1}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .stat{background:#fff;border:1px solid var(--line);padding:22px;position:relative}
+  .stat:before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:var(--red)}
+  .stat b{font-size:38px;line-height:1;letter-spacing:-.03em}.stat b i{font-style:normal;color:var(--red)}
+  .stat p{color:var(--grey);font-size:13px;margin-top:8px;line-height:1.5}
+  /* products */
+  .prod-head-actions{display:flex;gap:8px;flex-wrap:wrap}
+  .chip{border:1px solid var(--black);background:transparent;padding:9px 14px;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+  .chip.active{background:var(--black);color:#fff}
+  .products{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .card{background:#fff;border:1px solid var(--line);padding:24px;min-height:250px;display:flex;flex-direction:column;transition:.22s;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-4px);border-color:var(--black);box-shadow:0 18px 36px rgba(17,17,17,.08)}
+  .card:hover .card-num{color:var(--red)}
+  .card-top{display:flex;justify-content:space-between;align-items:start;margin-bottom:22px}
+  .card-num{font-size:13px;font-weight:900;letter-spacing:.14em;color:var(--grey);transition:.2s}
+  .card-icon{width:54px;height:54px;border:1px solid var(--line);display:grid;place-items:center;background:var(--bg)}
+  .card h3{font-size:20px;line-height:1.1;letter-spacing:-.02em;margin-bottom:10px}
+  .card p{color:var(--grey);font-size:14px;line-height:1.65;flex:1}
+  .card a{margin-top:18px;font-weight:800;font-size:12px;letter-spacing:.1em;text-transform:uppercase;display:inline-flex;gap:8px;align-items:center}
+  .card a:after{content:"→";color:var(--red)}
+  /* process dark */
+  .dark{background:var(--black);color:#fff}.dark .sec-desc{color:#AEB3B5}.dark h2{color:#fff}
+  .process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:10px}
+  .step{border:1px solid rgba(255,255,255,.16);padding:22px;background:#161616;min-height:210px}
+  .step b{font-size:12px;letter-spacing:.16em;color:#FF6B6B}.step h3{font-size:18px;margin:34px 0 10px;line-height:1.15}.step p{color:#AEB3B5;font-size:14px;line-height:1.65}
+  /* sustainability + news */
+  .sustain{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .s-card{padding:26px;border-top:4px solid var(--red);background:#fff;border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .s-card h3{font-size:19px;line-height:1.2;margin:14px 0 10px}.s-card p{color:var(--grey);font-size:14px;line-height:1.7}
+  .news-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:14px}
+  .news-main{background:var(--red);color:#fff;padding:30px;min-height:360px;display:flex;flex-direction:column;justify-content:end;position:relative;overflow:hidden}
+  .news-main:after{content:"NEWS";position:absolute;top:14px;right:18px;font-weight:900;letter-spacing:.2em;opacity:.22;font-size:42px}
+  .date{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;opacity:.85}
+  .news-main h3{font-size:30px;line-height:1.05;letter-spacing:-.02em;margin:12px 0}
+  .news-list{display:flex;flex-direction:column;gap:10px}
+  .news-item{background:#fff;border:1px solid var(--line);padding:18px 20px;display:flex;justify-content:space-between;gap:16px;align-items:center;transition:.2s}
+  .news-item:hover{border-color:var(--black);transform:translateX(3px)}
+  .news-item h4{font-size:15px;line-height:1.35}.news-item time{font-size:12px;color:var(--grey);white-space:nowrap;font-weight:700}
+  /* career */
+  .career{background:#fff;border:1px solid var(--line);display:grid;grid-template-columns:1.1fr .9fr;overflow:hidden}
+  .career-left{padding:38px}.career-left p{color:var(--grey);line-height:1.7;margin:16px 0 24px;max-width:520px}
+  .vacancies{display:flex;flex-direction:column}
+  .vac{padding:22px 26px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:center;background:var(--bg)}
+  .vac:last-child{border-bottom:0}.vac b{font-size:15px}.vac span{display:block;color:var(--grey);font-size:12px;margin-top:3px}.vac strong{color:var(--red);font-size:12px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+  /* footer / contacts */
+  footer{background:var(--black);color:#fff;padding:64px 0 0;margin-top:0}
+  .footer-grid{display:grid;grid-template-columns:1.3fr .7fr .7fr .9fr;gap:28px;padding-bottom:38px}
+  footer h5{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#9AA0A3;margin-bottom:16px}
+  footer li{list-style:none;margin:9px 0;color:#D8DBDB;font-size:14px}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding:18px 0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#8B9093;font-size:12px}
+  .form{display:grid;gap:10px;margin-top:14px}.form input,.form textarea{width:100%;padding:13px 14px;border:1px solid rgba(255,255,255,.2);background:#1A1A1A;color:#fff;font:inherit;font-size:14px}.form input::placeholder,.form textarea::placeholder{color:#7E8386}
+  .reveal{opacity:0;transform:translateY(18px);transition:.6s ease}.reveal.visible{opacity:1;transform:none}
+  @media(max-width:980px){
+    .menu{display:none}.burger{display:block}
+    .menu.open{display:flex;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;padding:18px 28px;border-bottom:1px solid var(--line);gap:6px}
+    .hero-inner,.about-grid,.news-grid,.career{grid-template-columns:1fr}
+    .products,.sustain,.process{grid-template-columns:1fr 1fr}
+    .footer-grid{grid-template-columns:1fr 1fr}
+    .hero-visual{min-height:auto}
+  }
+  @media(max-width:560px){section{padding:60px 0}.products,.sustain,.process,.stats,.footer-grid{grid-template-columns:1fr}.hero-meta{flex-direction:column}.container{padding:0 18px}h1{font-size:42px}}
+
+
+/* PRODUCT PAGE */
+.menu a.current{color:var(--red)}.menu a.current:after{width:100%}
+.page-hero{background:#111;color:#fff;position:relative;overflow:hidden;min-height:348px;display:flex;align-items:center}
+.page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#111 0%,#111 35%,rgba(17,17,17,.88) 58%,rgba(17,17,17,.05) 100%);pointer-events:none}
+.page-hero .container{position:relative;z-index:2;width:100%;padding-top:55px;padding-bottom:55px}
+.page-hero svg.hero-art{position:absolute;width:min(69vw,920px);height:auto;right:-4%;top:50%;transform:translateY(-50%);opacity:.9}
+.breadcrumbs{font-size:12px;color:#B9BDBE;letter-spacing:.06em}.breadcrumbs a:hover{color:#fff}.breadcrumbs span{color:#A31616;padding:0 11px}
+.page-hero h1{margin:18px 0 12px;font-size:clamp(52px,6vw,82px)}.page-hero p{color:#B9BDBE;font-size:16px;max-width:500px;line-height:1.65}
+.page-hero .hero-index{font-size:11px;color:#B9BDBE;letter-spacing:.16em;text-transform:uppercase;margin-top:29px;display:flex;gap:20px;align-items:center}.hero-index:before{content:"";width:32px;height:2px;background:var(--red)}
+.catalog-section{padding-top:0}.tabs-wrap{border-bottom:1px solid var(--line);background:#fff}.tabs{display:flex;gap:38px;align-items:center;min-height:70px}.tab{appearance:none;background:transparent;border:0;border-bottom:3px solid transparent;align-self:stretch;padding:0 4px;font:800 12px/1.2 Inter,system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;color:var(--grey);display:flex;align-items:center;gap:10px}.tab b{font-weight:800;font-size:11px;opacity:.65}.tab.active{color:#111;border-color:var(--red)}.tab:hover{color:var(--red)}
+.tabpanel{padding-top:58px;padding-bottom:94px}.tabpanel[hidden]{display:none}
+.catalog-intro{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:32px;flex-wrap:wrap}.catalog-intro p{max-width:460px;color:var(--grey);line-height:1.65;font-size:15px}
+.catalog-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.catalog-tile{background:#1b1d1e;min-height:390px;position:relative;overflow:hidden;color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:22px;isolation:isolate;transition:transform .25s}.catalog-tile:hover{transform:translateY(-5px)}.catalog-tile:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,17,17,.12) 10%,rgba(17,17,17,0) 42%,#111 100%);z-index:-1}.catalog-tile svg{position:absolute;inset:0;width:100%;height:100%;z-index:-2}.catalog-tile small{font-size:11px;letter-spacing:.15em;font-weight:800;color:#fff}.catalog-tile .tile-bottom{display:flex;align-items:end;justify-content:space-between;gap:12px}.catalog-tile h3{font-size:21px;line-height:1.13;letter-spacing:-.03em;max-width:200px}.catalog-tile .arrow{border:1px solid rgba(255,255,255,.6);width:34px;height:34px;flex-shrink:0;display:grid;place-items:center;font-size:19px;transition:.2s}.catalog-tile:hover .arrow{background:var(--red);border-color:var(--red)}
+.catalog-note{border-top:1px solid var(--line);margin-top:34px;padding-top:24px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}.catalog-note p{font-size:14px;color:var(--grey);max-width:650px;line-height:1.6}.catalog-note strong{color:var(--black)}
+.industry-tools{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:0 0 22px}.industry-tools p{font-size:13px;color:var(--grey)}
+#industries .card{min-height:235px}#industries .card h3{overflow-wrap:anywhere}
+.page-cta{background:var(--black);color:#fff;padding:32px 38px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;margin-top:28px}.page-cta h3{font-size:25px;letter-spacing:-.025em}.page-cta p{color:#AEB3B5;font-size:14px;margin-top:5px}
+@media(max-width:980px){.catalog-grid{grid-template-columns:repeat(2,1fr)}.page-hero svg.hero-art{width:100%;right:-36%;opacity:.65}}
+@media(max-width:560px){.page-hero{min-height:310px}.page-hero svg.hero-art{width:160%;right:-88%}.tabs{gap:18px;min-height:64px}.tab{font-size:10px;letter-spacing:.05em}.tab b{display:none}.tabpanel{padding-top:46px;padding-bottom:65px}.catalog-grid{gap:10px}.catalog-tile{min-height:270px;padding:14px}.catalog-tile h3{font-size:16px}.catalog-tile .arrow{width:28px;height:28px;font-size:16px}.page-cta{padding:25px}}
+</style></head>
+<body>
+<div class="topbar"><div class="container"><span><i class="dot"></i>Кировская обл., г. Омутнинск • Основан в <b>1773 году</b></span><span>EN &nbsp;|&nbsp; <b>RU</b> &nbsp;&nbsp;•&nbsp;&nbsp; +7 (83352) 4-14-01</span></div></div>
+<header class="main">
+  <div class="container nav">
+    <a class="logo" href="home.html#top" aria-label="ОМЗ">
+      <span class="logo-mark">ОМЗ</span>
+      <span class="logo-text"><strong>ОМЗ</strong><small>Омутнинский<br>металлургический завод</small></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="about.html">О компании</a><a href="products.html" class="current" aria-current="page">Продукция</a><a href="home.html#tech">Технологии</a><a href="sustain.html">Устойчивое развитие</a><a href="home.html#news">Медиацентр</a><a href="career.html">Карьера</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn" href="contacts.html">Контакты <span>→</span></a>
+      <button class="burger" id="burger" aria-label="Меню">☰</button>
+    </div>
+  </div>
+</header>
+<main>
+<div class="page-hero"><svg class="hero-art" viewBox="0 0 900 400" fill="none" aria-hidden="true"><defs><linearGradient id="bar" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6F7478"/><stop offset=".38" stop-color="#111111"/><stop offset=".72" stop-color="#6F7478"/><stop offset="1" stop-color="#111111"/></linearGradient></defs><g transform="translate(280 20) skewY(-16)" fill="url(#bar)" stroke="#929698" stroke-width="2"><path d="M0 100h570v42H0z"/><path d="M30 162h570v35H30z"/><path d="M60 215h570v44H60z"/><path d="M88 280h570v32H88z"/></g><g transform="translate(450 120)" fill="#111" stroke="#A31616" stroke-width="4"><circle cx="0" cy="0" r="30"/><circle cx="80" cy="0" r="30"/><circle cx="160" cy="0" r="30"/></g><path d="M390 60h490" stroke="#A31616" stroke-width="3"/></svg><div class="container"><div class="breadcrumbs"><a href="home.html">Главная</a><span> / </span>Продукция</div><h1>Продукция<span style="color:#A31616">.</span></h1><p>Металл, который становится основой больших проектов. От стандартного проката до профилей сложного сечения.</p><div class="hero-index">АО «ОМЗ» / производство с 1773 года</div></div></div>
+<section class="catalog-section" aria-label="Продукция и сферы применения">
+  <div class="tabs-wrap"><div class="container tabs" role="tablist" aria-label="Разделы продукции"><button type="button" id="tab-catalog" class="tab active" role="tab" aria-selected="true" aria-controls="catalog" data-target="catalog">Каталог продукции <b>04</b></button><button type="button" id="tab-industries" class="tab" role="tab" aria-selected="false" aria-controls="industries" data-target="industries">Сферы применения <b>13</b></button></div></div>
+  <div class="container">
+    <div class="tabpanel" id="catalog" role="tabpanel" aria-labelledby="tab-catalog"><div class="catalog-intro"><div><div class="kicker">Номенклатура / 01—04</div><h2>Каталог <span>продукции</span></h2></div><p>Подбираем металлопродукцию под технические требования заказчика. Четыре направления — сотни решений для промышленности.</p></div><div class="catalog-grid"><a class="catalog-tile" href="contacts.html" aria-label="Запросить: Горячекатаный прокат"><svg viewBox="0 0 300 390" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g1" x2="1" y2="1"><stop stop-color="#6F7478"/><stop offset=".4" stop-color="#111111"/><stop offset=".75" stop-color="#6F7478"/><stop offset="1" stop-color="#111111"/></linearGradient><pattern id="p1" width="44" height="44" patternUnits="userSpaceOnUse" patternTransform="rotate(-25)"><rect width="44" height="44" fill="#292d2f"/><path d="M0 0V44M15 0V44M30 0V44" stroke="#6F7478" stroke-width="5" opacity=".3"/></pattern></defs><rect width="300" height="390" fill="url(#p1)"/><g transform="rotate(-23 150 180)"><rect x="-50" y="60" width="390" height="68" fill="url(#g1)" stroke="#979b9d" stroke-width="2"/><rect x="-50" y="138" width="390" height="50" fill="#494e51" stroke="#9ca0a2" stroke-width="2"/><rect x="-50" y="201" width="390" height="45" fill="url(#g1)" stroke="#9ca0a2" stroke-width="2"/><rect x="-50" y="260" width="390" height="54" fill="#42474a" stroke="#9ca0a2" stroke-width="2"/></g><path d="M0 0h300v390H0z" fill="#111111" opacity=".1"/></svg><small class="mono">01 / МЕТАЛЛОПРОДУКЦИЯ</small><div class="tile-bottom"><h3>Горячекатаный прокат</h3><span class="arrow" aria-hidden="true">↗</span></div></a>
+<a class="catalog-tile" href="contacts.html" aria-label="Запросить: Калиброванный и обточенный прокат"><svg viewBox="0 0 300 390" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g2" x2="1" y2="1"><stop stop-color="#a9abad"/><stop offset=".27" stop-color="#45494b"/><stop offset=".55" stop-color="#9ca0a2"/><stop offset="1" stop-color="#222526"/></linearGradient></defs><rect width="300" height="390" fill="#393d3f"/><g transform="rotate(-18 150 180)"><g fill="url(#g2)" stroke="#111" stroke-width="2"><circle cx="44" cy="72" r="43"/><circle cx="134" cy="72" r="43"/><circle cx="224" cy="72" r="43"/><circle cx="-2" cy="153" r="43"/><circle cx="88" cy="153" r="43"/><circle cx="178" cy="153" r="43"/><circle cx="268" cy="153" r="43"/><circle cx="43" cy="234" r="43"/><circle cx="133" cy="234" r="43"/><circle cx="223" cy="234" r="43"/></g><g fill="#242729" stroke="#83878a" stroke-width="2"><circle cx="44" cy="72" r="25"/><circle cx="134" cy="72" r="25"/><circle cx="224" cy="72" r="25"/><circle cx="-2" cy="153" r="25"/><circle cx="88" cy="153" r="25"/><circle cx="178" cy="153" r="25"/><circle cx="268" cy="153" r="25"/><circle cx="43" cy="234" r="25"/><circle cx="133" cy="234" r="25"/><circle cx="223" cy="234" r="25"/></g></g></svg><small class="mono">02 / МЕТАЛЛОПРОДУКЦИЯ</small><div class="tile-bottom"><h3>Калиброванный и обточенный прокат</h3><span class="arrow" aria-hidden="true">↗</span></div></a>
+<a class="catalog-tile" href="contacts.html" aria-label="Запросить: Механически обработанные изделия"><svg viewBox="0 0 300 390" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g3" x2="1" y2="1"><stop stop-color="#a4a8aa"/><stop offset=".34" stop-color="#3a3e40"/><stop offset=".75" stop-color="#858a8d"/><stop offset="1" stop-color="#111111"/></linearGradient></defs><rect width="300" height="390" fill="#252829"/><g fill="url(#g3)" stroke="#a5a9aa" stroke-width="2" transform="rotate(-14 150 175)"><rect x="32" y="80" width="95" height="115" rx="6"/><circle cx="80" cy="137" r="33" fill="#202324"/><rect x="151" y="36" width="101" height="116" rx="3"/><rect x="183" y="56" width="38" height="48" rx="2" fill="#272a2b"/><rect x="128" y="174" width="120" height="95" rx="4"/><circle cx="188" cy="220" r="31" fill="#222526"/><rect x="10" y="215" width="102" height="85" rx="3"/><circle cx="60" cy="260" r="19" fill="#252829"/></g><path d="M0 300l300-55v145H0z" fill="#111111" opacity=".25"/></svg><small class="mono">03 / МЕТАЛЛОПРОДУКЦИЯ</small><div class="tile-bottom"><h3>Механически обработанные изделия</h3><span class="arrow" aria-hidden="true">↗</span></div></a>
+<a class="catalog-tile" href="contacts.html" aria-label="Запросить: Фасонные профили"><svg viewBox="0 0 300 390" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g4" x2="1" y2="1"><stop stop-color="#aeb1b2"/><stop offset=".38" stop-color="#35393b"/><stop offset=".7" stop-color="#919597"/><stop offset="1" stop-color="#111111"/></linearGradient></defs><rect width="300" height="390" fill="#202425"/><g transform="rotate(-18 150 160)" fill="url(#g4)" stroke="#111" stroke-width="4"><path d="M-40 30h110l-16 20v30h74V50l-16-20h110v170H-40z"/><path d="M100 110h110l-16 20v30h74v-30l-16-20h110v170H100z"/><path d="M-95 230H15l-16 20v30h74v-30l-16-20h110v170H-95z"/></g><path d="M0 0h300v390H0z" fill="#111" opacity=".14"/></svg><small class="mono">04 / МЕТАЛЛОПРОДУКЦИЯ</small><div class="tile-bottom"><h3>Фасонные профили</h3><span class="arrow" aria-hidden="true">↗</span></div></a></div><div class="catalog-note"><p><strong>Требуется нестандартный профиль?</strong> Обсудим чертёж, марку стали, объём партии и условия производства.</p><a class="btn btn-outline" href="contacts.html">Обсудить задачу ↗</a></div></div>
+    <div class="tabpanel" id="industries" role="tabpanel" aria-labelledby="tab-industries" hidden><div class="catalog-intro"><div><div class="kicker">Сферы применения / 01—13</div><h2>Для каждой <span>отрасли</span></h2></div><p>Продукция ОМЗ применяется в 13 направлениях: от автомобилестроения и мостов до судостроения и инструментального производства.</p></div><div class="industry-tools"><p>13 отраслей применения</p><div class="prod-head-actions" aria-label="Фильтр отраслей"><button class="chip active" data-filter="all" type="button">Все · 13</button><button class="chip" data-filter="transport" type="button">Транспорт · 3</button><button class="chip" data-filter="industry" type="button">Промышленность · 7</button><button class="chip" data-filter="build" type="button">Строительство · 3</button></div></div><div class="products" id="productGrid">
+
+      <article class="card reveal" data-cat="transport"><div class="card-top"><span class="card-num">01 / ТРАНСПОРТ</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16l1.5-5A2 2 0 0 1 6.4 9.5h11.2a2 2 0 0 1 1.9 1.5L21 16M3 16h18M3 16v3m18-3v3"/><circle cx="7" cy="19" r="1.6"/><circle cx="17" cy="19" r="1.6"/></svg></span></div><h3>Автомобилестроение</h3><p>Прокат для рессор, элементов подвески и деталей грузовой техники. Стабильная геометрия и ресурс при циклических нагрузках.</p><a href="auto.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="industry"><div class="card-top"><span class="card-num">02 / ПРОМЫШЛЕННОСТЬ</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20"/><path d="M10 10l2-2.5L14 10M10 14l2 2.5L14 14"/></svg></span></div><h3>Лифтостроение</h3><p>Направляющие и специальные профили для лифтовых систем. Прямолинейность и качество поверхности — по требованиям отрасли.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="build"><div class="card-top"><span class="card-num">03 / СТРОИТЕЛЬСТВО</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A31616" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18c3-6 6-9 9-9s6 3 9 9M3 18h18M7 18v-4M12 18V9M17 18v-4"/></svg></span></div><h3>Мостостроение</h3><p>Фасонные профили для мостовых конструкций. Несущая способность, свариваемость и контроль каждой партии.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="transport"><div class="card-top"><span class="card-num">04 / ТРАНСПОРТ</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A31616" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4v16M19 4v16M5 8h14M5 13h14M7 20l3-16M17 20L14 4"/></svg></span></div><h3>Железнодорожная отрасль</h3><p>Профили для вагоностроения и путевого хозяйства. Точность исполнения для безопасности и долговечности узлов.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="build"><div class="card-top"><span class="card-num">05 / СТРОИТЕЛЬСТВО</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M6 21V4h8v17M14 9h4v12M9 8h1.5M9 12h1.5M9 16h1.5"/></svg></span></div><h3>Строительная отрасль</h3><p>Фасонный прокат для металлокаркасов, ферм и несущих конструкций. Геометрия профиля и стабильность механических свойств на каждом объекте.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="industry"><div class="card-top"><span class="card-num">06 / ПРОМЫШЛЕННОСТЬ</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19L10 5l4 8 2-4 4 10H4Z"/></svg></span></div><h3>Горнодобывающая отрасль</h3><p>Износостойкий прокат для оборудования и крепёжных систем. Работа в условиях высокой нагрузки и абразивной среды.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="industry"><div class="card-top"><span class="card-num">07 / ПРОМЫШЛЕННОСТЬ</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A31616" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="11" height="6" rx="1"/><path d="M13 11h4l2.2 3v1H13"/><circle cx="6.5" cy="17.5" r="2.4"/><circle cx="16.5" cy="17.5" r="2"/></svg></span></div><h3>Сельхозмашиностроение</h3><p>Прокат для рам, узлов и деталей сельскохозяйственной техники. Ресурс при вибрационных и ударных нагрузках в поле.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="build"><div class="card-top"><span class="card-num">08 / СТРОИТЕЛЬСТВО</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11V4h12v7"/><path d="M3 15c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0"/><path d="M3 19c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0"/></svg></span></div><h3>Гидротехническое строительство</h3><p>Шпунтовые и специальные профили для гидротехнических сооружений. Защита от коррозии и точность замковых соединений.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="transport"><div class="card-top"><span class="card-num">09 / ТРАНСПОРТ</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16h20l-2.5 4.5h-15L2 16Z"/><path d="M5 16v-4.5h14V16M12 11.5V6M9.5 8.5h5"/></svg></span></div><h3>Судостроение</h3><p>Профили и полосы для судовых конструкций и механизмов. Свариваемость, стабильные свойства и точность сечения.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="industry"><div class="card-top"><span class="card-num">10 / ПРОМЫШЛЕННОСТЬ</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A31616" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l8 4.6v9.3l-8 4.6-8-4.6V7.1l8-4.6Z"/><circle cx="12" cy="12" r="3.4"/></svg></span></div><h3>Станкостроительная отрасль</h3><p>Прокат для станин, направляющих и узлов станочного оборудования. Жёсткость, точность и повторяемость геометрии.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="industry"><div class="card-top"><span class="card-num">11 / ПРОМЫШЛЕННОСТЬ</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a6.3 6.3 0 0 0 6.3-6.3c0-3.8-2.1-5.8-3.8-8.6-2.6 1.9-3.8 4-3.9 6.2a2.6 2.6 0 0 1-2.6-2.6C6.9 13.5 5.7 15.1 5.7 17A6.3 6.3 0 0 0 12 22Z"/></svg></span></div><h3>Литейное производство</h3><p>Прокат для литейной оснастки и изложниц. Стойкость к термическим циклам и стабильность размеров при нагреве.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="industry"><div class="card-top"><span class="card-num">12 / ПРОМЫШЛЕННОСТЬ</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span></div><h3>Инструментальная отрасль</h3><p>Инструментальный прокат повышенной твёрдости для режущего и измерительного инструмента. Износостойкость и стабильная закалка.</p><a href="contacts.html">Подробнее</a></article>
+
+      <article class="card reveal" data-cat="industry"><div class="card-top"><span class="card-num">13 / ПРОЧИЕ</span><span class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A31616" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="19" cy="12" r="1.7"/></svg></span></div><h3>Прочие отрасли</h3><p>Фасонные и сортовые профили под специальные задачи заказчика. Разрабатываем сечения по чертежам и техническим условиям.</p><a href="contacts.html">Подробнее</a></article>
+    </div><div class="page-cta"><div><h3>Нужен профиль под вашу задачу?</h3><p>Расскажите о требованиях — обсудим возможное решение.</p></div><a class="btn" href="contacts.html">Связаться с нами ↗</a></div></div>
+  </div>
+</section>
+</main>
+<footer id="contacts">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="home.html#top" style="color:#fff"><span class="logo-mark">ОМЗ</span><span class="logo-text"><strong style="color:#fff">ОМЗ</strong><small style="color:#9AA0A3">Омутнинский металлургический завод</small></span></a>
+        <p style="color:#AEB3B5;line-height:1.7;margin-top:18px;max-width:320px;font-size:14px">Фасонный и сортовой горячекатаный прокат с 1773 года. Надёжность, проверенная временем и отраслями.</p>
+        <div style="display:flex;gap:8px;margin-top:18px"><span style="width:28px;height:28px;background:var(--red);display:block" title="#A31616"></span><span style="width:28px;height:28px;background:#2A2A2A;border:1px solid rgba(255,255,255,.2);display:block" title="#111111"></span><span style="width:28px;height:28px;background:var(--grey);display:block" title="#6F7478"></span><span style="width:28px;height:28px;background:var(--bg);display:block" title="#F2F3F3"></span></div>
+      </div>
+      <div><h5>Навигация</h5><ul><li><a href="about.html">О компании</a></li><li><a href="products.html">Продукция</a></li><li><a href="sustain.html">Устойчивое развитие</a></li><li><a href="career.html">Карьера</a></li><li><a href="home.html#news">Медиацентр</a></li></ul></div>
+      <div><h5>Продукция • 13 отраслей</h5><ul style="columns:2;column-gap:16px;font-size:13px"><li><a href="#catalog">Каталог продукции</a></li><li><a href="#industries">Все 13 отраслей</a></li><li>Фасонные профили</li><li>Горячекатаный прокат</li></ul></div>
+      <div>
+        <h5>Свяжитесь с нами</h5>
+        <ul><li>612740, Кировская обл.,<br>г. Омутнинск, …</li><li>+7 (83352) 4-14-01</li><li>info@omz.example • sales@omz.example</li></ul>
+        <form class="form" id="leadForm"><input required type="text" placeholder="Ваше имя" aria-label="Ваше имя"><input required type="tel" placeholder="Телефон или e-mail" aria-label="Контакт"><textarea rows="2" placeholder="Что вас интересует? Профиль, объём, сроки…"></textarea><button class="btn" type="submit" style="justify-content:center">Отправить запрос →</button><span id="formMsg" style="font-size:13px;color:#8CE99A;display:none">Спасибо! Запрос получен — вернёмся с ответом в рабочее время.</span></form>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 1773—2026 АО «Омутнинский металлургический завод». Концепт редизайна в фирменных цветах бренда.</span><span>HEX #A31616 • #111111 • #6F7478 • #F2F3F3</span></div>
+  </div>
+</footer>
+<script>
+const burger=document.getElementById('burger'), menu=document.getElementById('menu');
+burger.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+const tabs=[...document.querySelectorAll('.tab')],panels=[...document.querySelectorAll('.tabpanel')];
+function selectTab(name, updateHash=false){
+  if(!['catalog','industries'].includes(name))name='catalog';
+  tabs.forEach(t=>{let active=t.dataset.target===name;t.classList.toggle('active',active);t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;});
+  panels.forEach(p=>p.hidden=p.id!==name);
+  if(name==='industries')document.querySelectorAll('#productGrid .card').forEach(c=>c.classList.add('visible'));
+  if(updateHash)history.replaceState(null,'','#'+name);
+}
+tabs.forEach(t=>t.addEventListener('click',()=>selectTab(t.dataset.target,true)));
+window.addEventListener('hashchange',()=>{if(['catalog','industries'].includes(location.hash.slice(1)))selectTab(location.hash.slice(1));});
+selectTab(location.hash.slice(1));
+const chips=[...document.querySelectorAll('.chip')],cards=[...document.querySelectorAll('#productGrid .card')];
+chips.forEach(ch=>ch.addEventListener('click',()=>{chips.forEach(c=>c.classList.remove('active'));ch.classList.add('active');const f=ch.dataset.filter;cards.forEach(c=>c.style.display=f==='all'||c.dataset.cat===f?'flex':'none');}));
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// Reveal the hidden-tab cards when that panel opens, including in no-animation environments.
+tabs.forEach(t=>t.addEventListener('click',()=>{if(t.dataset.target==='industries')cards.forEach(c=>c.classList.add('visible'));}));
+if(location.hash==='#industries')cards.forEach(c=>c.classList.add('visible'));
+document.getElementById('leadForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('formMsg').style.display='block';e.target.querySelector('button').textContent='Запрос отправлен ✓';});
+</script></body></html>
